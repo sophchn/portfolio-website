@@ -12,15 +12,6 @@ body {
   background-color: #FBF8F5
 }
 
-/* fonts */
-@font-face {
-  font-family: 'Josefin Slab', serif;
-}
-
-@font-face {
-  font-family: 'Poppins', sans-serif;
-}
-
 /* typography */
 body {
   font-family: 'Poppins', sans-serif;
@@ -61,21 +52,24 @@ img {
   width: 100%;
 }
 
+.social > img {
+  width: 44px;
+  height:44px;
+
+}
+
 /* links & buttons */
 a {
   color: #ff5736;
   text-decoration: none;
-  /* No underlining */
 }
 
 a:hover {
   color: #003b49;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 a:visited {
-  /* visited link */
   color: #fba374;
 }
 
@@ -121,9 +115,12 @@ a:active {
 .button.contact:active {
   opacity: 0.8;
   text-decoration: none;
-  /* header */
-  /* footer */
-  /* main */
-  /* general */
-  /* about */
-  /* contact */
+}
+
+
+/* header */
+/* footer */
+/* main */
+/* general */
+/* about */
+/* contact */

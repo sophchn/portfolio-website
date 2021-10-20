@@ -1,257 +1,410 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/social/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/social/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <title>Space Jam - Case Study</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/social/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/social/favicon-16x16.png">
-  <meta charset="utf-8">
-  <title>Space Jam - Case Study</title>
-</head>
-
-<body>
-  <header>
-    <div>
-      <img src="./img/personal/logo/logo-scallop.svg" alt="Sophie Chen">
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- HEADING -->
-    <div>
-      <h1>Space Jam</h1>
-    </div>
-    <picture>
-      <source srcset="./img/spacejam/title@1.jpg" media="(max-width:767px)">
-      <img src="./img/spacejam/title@2.jpg" alt="Space Jam - Title">
-    </picture>
-
-    <div>
-      <!-- SUMMARY -->
-      <h2></h2>
-      <p></p>
-    </div>
-
-    <div>
-      <ul>
-        <li>Role: Student UX/UI Designer</li>
-        <li>Time: May 13, 2021 - May 21, 2021</li>
-        <li>Tools: Adobe XD, Procreate</li>
-        <li>Special Thanks: Kei Michisaki (teammate)</li>
-      </ul>
-    </div>
-
-    <div>
-      <!-- CREATIVE JAM -->
+  <body>
+    <header>
       <div>
-        <h2>Come On & Slam!</h2>
-        <p>This spring, Adobe called all UX Bootcamp students and alum to compete in a NASA-inspired Creative Jam.</p>
-        <p>After hearing about the event, I immediately knew I wanted fellow CareerFoundry student Kei to be my partner in crime. We saw this as a fantastic opportunity to add another design project to our portfolio, network with other UX designers,
-          and get some much-needed constructive feedback from experts.</p>
-        <p>'m so proud of what we accomplished in a week and excited to walk you through our process.</p>
+        <div class="container"></div>
+        <img src="./img/personal/logo/logo-scallop.svg" alt="Sophie Chen" class="logo"/>
+        <nav>
+          <ul class="navigation"></ul>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div>
-      <!-- PROJECT BRIEF -->
-      <div>
-        <h2>The Mission</h2>
-        <p>Create a tablet app experience to get kids excited about space exploration by teaching them about a single or multiple NASA JPL missions.</p>
-        <p>The target group is kids between 11 to 13 years old (grades 6 to 8). Features may include gaming, gallery, educational content that will help them learn more about science, robotics, and space.</p>
-      </div>
-    </div>
-
-    <div>
-      <!-- IDEATE -->
-      <div>
-        <h2>Brainstorming</h2>
-        <p>Once we figured out the basics; tablet type, a grid, and setting up a shared document, we were ready to rumble.</p>
-        <p>We developed the information architecture of Space Jam to help us narrow down our ideas. But still wanting to cover everything under the Sun, we picked the Solar System as our topic.</p>
-        <p>Next, it was time to divide and conquer.</p>
-      </div>
-
-      <div>
+    <main>
+      <!-- HERO -->
+      <div id="hero">
+        <div class="container">
+          <h1>Space Jam</h1>
+        </div>
         <picture>
-          <source srcset="./img/spacejam/ia@1.jpg" media="(max-width:767px)">
-          <img src="./img/spacejam/ia@2.jpg" alt="Information Architecture">
+          <source
+            srcset="./img/spacejam/title@1.jpg"
+            media="(max-width:767px)"
+          />
+          <img src="./img/spacejam/title@2.jpg" alt="Space Jam - Title" />
         </picture>
-      </div>
-    </div>
 
-    <div>
-      <!-- PROCESS -->
+        <div>
+          <!-- SUMMARY -->
+          <h2></h2>
+          <p></p>
+        </div>
+
+        <div>
+          <ul>
+            <li>Role: Student UX/UI Designer</li>
+            <li>Time: May 13, 2021 - May 21, 2021</li>
+            <li>Tools: Adobe XD, Procreate</li>
+            <li>Special Thanks: Kei Michisaki (teammate)</li>
+          </ul>
+        </div>
+
+        <div>
+          <!-- CREATIVE JAM -->
+          <div>
+            <h2>Come On & Slam!</h2>
+            <p>
+              This spring, Adobe called all UX Bootcamp students and alum to
+              compete in a NASA-inspired Creative Jam.
+            </p>
+            <p>
+              After hearing about the event, I immediately knew I wanted fellow
+              CareerFoundry student Kei to be my partner in crime. We saw this
+              as a fantastic opportunity to add another design project to our
+              portfolio, network with other UX designers, and get some
+              much-needed constructive feedback from experts.
+            </p>
+            <p>
+              'm so proud of what we accomplished in a week and excited to walk
+              you through our process.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <!-- PROJECT BRIEF -->
+          <div>
+            <h2>The Mission</h2>
+            <p>
+              Create a tablet app experience to get kids excited about space
+              exploration by teaching them about a single or multiple NASA JPL
+              missions.
+            </p>
+            <p>
+              The target group is kids between 11 to 13 years old (grades 6 to
+              8). Features may include gaming, gallery, educational content that
+              will help them learn more about science, robotics, and space.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <!-- IDEATE -->
+          <div>
+            <h2>Brainstorming</h2>
+            <p>
+              Once we figured out the basics; tablet type, a grid, and setting
+              up a shared document, we were ready to rumble.
+            </p>
+            <p>
+              We developed the information architecture of Space Jam to help us
+              narrow down our ideas. But still wanting to cover everything under
+              the Sun, we picked the Solar System as our topic.
+            </p>
+            <p>Next, it was time to divide and conquer.</p>
+          </div>
+
+          <div>
+            <picture>
+              <source
+                srcset="./img/spacejam/ia@1.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/spacejam/ia@2.jpg"
+                alt="Information Architecture"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div>
+          <!-- PROCESS -->
+          <div>
+            <h2>Divide & Conquer</h2>
+            <p>
+              Kei shined in the research arena, scouring through many articles
+              to gather the facts we needed about our Solar System and JPL
+              Missions.
+            </p>
+            <p>
+              I worked on our user personas and mood board, then created the
+              planet drawings. Together, we tackled new Adobe XD skills such as
+              animation and audio.
+            </p>
+            <p>
+              Knowing that both of us were equally enthusiastic and committed to
+              this project brought our vision to life. I still can't believe how
+              much we accomplished in one week. And fresh out of our UX
+              Immersion!
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <!-- UNDERSTAND -->
+          <div>
+            <h2>What Do Teens Want?</h2>
+            <p>
+              Based on the project brief, the tablet app should allow children
+              to apply and build on concepts they have already learned and
+              develop an understanding of the vast world beyond our planet.
+            </p>
+            <p>From our research, these were the key takeaways:</p>
+            <ul>
+              <li>Care a lot about aesthetic</li>
+              <li>Most critical of websites/apps</li>
+              <li>Have the ability to skim info</li>
+              <li>Prefer not to have to use personal info</li>
+            </ul>
+            <p>
+              We wanted to design an engaging experience that encouraged
+              children to keep asking questions about the world around them.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <!-- PERSONA -->
+          <div>
+            <h2>Meet Our Players</h2>
+          </div>
+
+          <div>
+            <picture>
+              <source
+                srcset="./img/spacejam/ezra@1.jpg"
+                media="(max-width:767px)"
+              />
+              <img src="./img/spacejam/ezra@2.jpg" alt="Persona - Ezra" />
+              <source
+                srcset="./img/spacejam/layla@1.jpg"
+                media="(max-width:767px)"
+              />
+              <img src="./img/spacejam/layla@2.jpg" alt="Persona - Layla" />
+            </picture>
+          </div>
+        </div>
+
+        <div>
+          <!-- PERSONA -->
+          <div>
+            <h2>Initial Sketches</h2>
+          </div>
+
+          <div>
+            <picture>
+              <source
+                srcset="./img/spacejam/sketch-1@1.png"
+                media="(max-width:767px)"
+              />
+              <img src="./img/spacejam/sketch-1@2.png" alt="Sketch - 1" />
+              <source
+                srcset="./img/spacejam/sketch-2@1.png"
+                media="(max-width:767px)"
+              />
+              <img src="./img/spacejam/sketch-2@2.png" alt="Sketch - 2" />
+              <source
+                srcset="./img/spacejam/sketch-3@1.png"
+                media="(max-width:767px)"
+              />
+              <img src="./img/spacejam/sketch-3@2.png" alt="Sketch - 3" />
+              <source
+                srcset="./img/spacejam/sketch-4@1.png"
+                media="(max-width:767px)"
+              />
+              <img src="./img/spacejam/sketch-4@2.png" alt="Sketch - 4" />
+            </picture>
+          </div>
+        </div>
+
+        <div>
+          <!-- MOOD BOARD -->
+          <div>
+            <h2>Mood Board</h2>
+            <p>
+              Inspired by the Space Age and the scientific and cultural
+              developments from the Space Race, we designed with vintage
+              NASA-inspired artwork in mind.
+            </p>
+            <p>
+              We finalized our color palette after designing our Solar System.
+              With the Solar System at the core of Space Jam, we wanted to
+              ensure the palette highlighted the beauty of the Sun and each
+              object in its orbit.
+            </p>
+            <p>
+              In addition to the Solar System, we added Astro Buddy to help
+              guide teens around Space Jam as they explore NASA JPL Missions.
+            </p>
+          </div>
+
+          <div>
+            <picture>
+              <source
+                srcset="./img/spacejam/mood-board@1.jpg"
+                media="(max-width:767px)"
+              />
+              <img src="./img/spacejam/mood-board@2.jpg" alt="Mood Board" />
+            </picture>
+          </div>
+        </div>
+
+        <div>
+          <!-- FINALIZE -->
+          <div>
+            <h2>Ready for Takeoff</h2>
+            <p>
+              As the deadline approached, it was time to finalize our design. We
+              hopped on a call and went through each wireframe.
+            </p>
+            <p>
+              We asked ourselves whether the content would be interesting enough
+              for a space-enthusiast like Layla (secondary-persona) but not
+              overwhelming for a student like Ezra (primary-persona). We felt
+              that the interactive Solar System allowed teens to quickly skim
+              info while the Discover page gave them a chance to deep-dive into
+              specific missions.
+            </p>
+            <p>
+              I invite you to explore our interactive prototype to learn more
+              about Space Jam (and a few fun facts about our Solar System)!
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <!-- PROTOTYPE -->
+          <div>
+            <h2>Interactive Prototype</h2>
+          </div>
+        </div>
+
+        <div>
+          <!-- OUTCOME -->
+          <div>
+            <h2>Outcome</h2>
+            <p>
+              While we didn't place, I had a blast working on Space Jam. I'm so
+              proud of what we were able to accomplish in a week. It was a great
+              learning experience and, I loved working with a teammate on a UX
+              project.
+            </p>
+            <h4>CONGRATS TO ALL THE WINNERS!</h4>
+          </div>
+        </div>
+
+        <div>
+          <!-- REFLECTION -->
+          <div>
+            <h2>Reflection</h2>
+            <h4>Venture Outside Your Comfort Zone</h4>
+            <p>
+              If in 2019 you told me I would be signing up for a one-week UX
+              competition, I would have laughed in your face. But thanks to the
+              supportive CareerFoundry community, I decided to push myself
+              outside of my comfort zone and give it a go.
+            </p>
+
+            <h4>Collaboration Makes Us Better</h4>
+            <p>
+              Kei and I were not a team simply because we agreed to compete
+              together. Kei was my mentor and personal hype man. If I ever felt
+              stuck or unsure about my design decisions, she was there to walk
+              with me through my thought process.
+            </p>
+
+            <h4>Trust In Timing & Your Mentor</h4>
+            <p>
+              At the time of the Creative Jam, I doubted if UX was the right
+              path for me. I felt that at any moment, a "real" designer would
+              call me a fraud. But my gut told me to trust my mentor and know
+              that looking back, all the dots would connect themselves.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
       <div>
-        <h2>Divide & Conquer</h2>
-        <p>Kei shined in the research arena, scouring through many articles to gather the facts we needed about our Solar System and JPL Missions.</p>
-        <p>I worked on our user personas and mood board, then created the planet drawings. Together, we tackled new Adobe XD skills such as animation and audio.</p>
-        <p>Knowing that both of us were equally enthusiastic and committed to this project brought our vision to life. I still can't believe how much we accomplished in one week. And fresh out of our UX Immersion!</p>
+        <!-- FOOTER -->
+        <div>
+          <h2>Let's Chat!</h2>
+          <p>
+            If you would like to learn more about my work or want to chat over a
+            cup of virtual coffee, feel free to reach out. I'm never one to turn
+            down meeting a new person or drinking a big cup of iced coffee.
+          </p>
+          <p>
+            Give me a call at
+            <a href="tel:7062016214">706-201-6214</a>
+          </p>
+          <p>Prefer to shoot me an email?</p>
+          <a href="mailto:sophie.chen13@gmail.com">Email Me</a>
+        </div>
+
+        <div>
+          <!-- SOCIAL -->
+          <p>Let's Connect!</p>
+          <a
+            href="https://www.linkedin.com/in/sophiechen13/"
+            target="_blank"
+            class="social"
+          >
+            <img src="./img/social/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.behance.net/sophiechen13"
+            target="_blank"
+            class="social"
+          >
+            <img src="./img/social/behance.png" alt="Behance" />
+          </a>
+        </div>
+
+        <div>
+          <!-- COPYRIGHT -->
+          <p>Copyright Sophie Chen 2021</p>
+        </div>
       </div>
-    </div>
-
-    <div>
-      <!-- UNDERSTAND -->
-      <div>
-        <h2>What Do Teens Want?</h2>
-        <p>Based on the project brief, the tablet app should allow children to apply and build on concepts they have already learned and develop an understanding of the vast world beyond our planet.</p>
-        <p>From our research, these were the key takeaways:</p>
-        <ul>
-          <li>Care a lot about aesthetic</li>
-          <li>Most critical of websites/apps</li>
-          <li>Have the ability to skim info</li>
-          <li>Prefer not to have to use personal info</li>
-        </ul>
-        <p>We wanted to design an engaging experience that encouraged children to keep asking questions about the world around them.</p>
-      </div>
-    </div>
-
-    <div>
-      <!-- PERSONA -->
-      <div>
-        <h2>Meet Our Players</h2>
-      </div>
-
-      <div>
-        <picture>
-          <source srcset="./img/spacejam/ezra@1.jpg" media="(max-width:767px)">
-          <img src="./img/spacejam/ezra@2.jpg" alt="Persona - Ezra">
-          <source srcset="./img/spacejam/layla@1.jpg" media="(max-width:767px)">
-          <img src="./img/spacejam/layla@2.jpg" alt="Persona - Layla">
-        </picture>
-      </div>
-    </div>
-
-    <div>
-      <!-- PERSONA -->
-      <div>
-        <h2>Initial Sketches</h2>
-      </div>
-
-      <div>
-        <picture>
-          <source srcset="./img/spacejam/sketch-1@1.png" media="(max-width:767px)">
-          <img src="./img/spacejam/sketch-1@2.png" alt="Sketch - 1">
-          <source srcset="./img/spacejam/sketch-2@1.png" media="(max-width:767px)">
-          <img src="./img/spacejam/sketch-2@2.png" alt="Sketch - 2">
-          <source srcset="./img/spacejam/sketch-3@1.png" media="(max-width:767px)">
-          <img src="./img/spacejam/sketch-3@2.png" alt="Sketch - 3">
-          <source srcset="./img/spacejam/sketch-4@1.png" media="(max-width:767px)">
-          <img src="./img/spacejam/sketch-4@2.png" alt="Sketch - 4">
-        </picture>
-      </div>
-    </div>
-
-    <div>
-      <!-- MOOD BOARD -->
-      <div>
-        <h2>Mood Board</h2>
-        <p>Inspired by the Space Age and the scientific and cultural developments from the Space Race, we designed with vintage NASA-inspired artwork in mind.</p>
-        <p>We finalized our color palette after designing our Solar System. With the Solar System at the core of Space Jam, we wanted to ensure the palette highlighted the beauty of the Sun and each object in its orbit.</p>
-        <p>In addition to the Solar System, we added Astro Buddy to help guide teens around Space Jam as they explore NASA JPL Missions.</p>
-      </div>
-
-      <div>
-        <picture>
-          <source srcset="./img/spacejam/mood-board@1.jpg" media="(max-width:767px)">
-          <img src="./img/spacejam/mood-board@2.jpg" alt="Mood Board">
-        </picture>
-      </div>
-    </div>
-
-    <div>
-      <!-- FINALIZE -->
-      <div>
-        <h2>Ready for Takeoff</h2>
-        <p>As the deadline approached, it was time to finalize our design. We hopped on a call and went through each wireframe.</p>
-        <p>We asked ourselves whether the content would be interesting enough for a space-enthusiast like Layla (secondary-persona) but not overwhelming for a student like Ezra (primary-persona). We felt that the interactive Solar System allowed
-          teens to quickly skim info while the Discover page gave them a chance to deep-dive into specific missions.</p>
-        <p>I invite you to explore our interactive prototype to learn more about Space Jam (and a few fun facts about our Solar System)!</p>
-      </div>
-    </div>
-
-    <div>
-      <!-- PROTOTYPE -->
-      <div>
-        <h2>Interactive Prototype</h2>
-      </div>
-    </div>
-
-    <div>
-      <!-- OUTCOME -->
-      <div>
-        <h2>Outcome</h2>
-        <p>While we didn't place, I had a blast working on Space Jam. I'm so proud of what we were able to accomplish in a week. It was a great learning experience and, I loved working with a teammate on a UX project.</p>
-        <h4>CONGRATS TO ALL THE WINNERS!</h4>
-      </div>
-    </div>
-
-    <div>
-      <!-- REFLECTION -->
-      <div>
-        <h2>Reflection</h2>
-        <h4>Venture Outside Your Comfort Zone</h4>
-        <p>If in 2019 you told me I would be signing up for a one-week UX competition, I would have laughed in your face. But thanks to the supportive CareerFoundry community, I decided to push myself outside of my comfort zone and give it a go.</p>
-
-        <h4>Collaboration Makes Us Better</h4>
-        <p>Kei and I were not a team simply because we agreed to compete together. Kei was my mentor and personal hype man. If I ever felt stuck or unsure about my design decisions, she was there to walk with me through my thought process.</p>
-
-        <h4>Trust In Timing & Your Mentor</h4>
-        <p>At the time of the Creative Jam, I doubted if UX was the right path for me. I felt that at any moment, a "real" designer would call me a fraud. But my gut told me to trust my mentor and know that looking back, all the dots would connect
-          themselves.</p>
-      </div>
-    </div>
-
-  </main>
-
-  <footer>
-    <div>
-      <!-- FOOTER -->
-      <div>
-        <h2>Let's Chat!</h2>
-        <p>If you would like to learn more about my work or want to chat over a cup of virtual coffee, feel free to reach out. I'm never one to turn down meeting a new person or drinking a big cup of iced coffee.</p>
-        <p>Give me a call at
-          <a href="tel:7062016214">706-201-6214</a>
-        </p>
-        <p>Prefer to shoot me an email?</p>
-        <a href="mailto:sophie.chen13@gmail.com">Email Me</a>
-      </div>
-
-      <div>
-        <!-- SOCIAL -->
-        <p>Let's Connect!</p>
-        <a href="https://www.linkedin.com/in/sophiechen13/" target="_blank" class="social">
-          <img src="./img/social/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://www.behance.net/sophiechen13" target="_blank" class="social">
-          <img src="./img/social/behance.png" alt="Behance">
-        </a>
-      </div>
-
-      <div>
-        <!-- COPYRIGHT -->
-        <p>Copyright Sophie Chen 2021</p>
-      </div>
-    </div>
-  </footer>
-
-</body>
-
+    </footer>
+  </body>
 </html>

@@ -1,303 +1,433 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/social/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/social/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <title>Kultur - Case Study</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/social/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/social/favicon-16x16.png">
-  <meta charset="utf-8">
-  <title>Kultur - Case Study</title>
-</head>
-
-<body>
-  <header>
-    <div>
-      <img src="./img/personal/logo/logo-scallop.svg" alt="Sophie Chen">
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- HEADING -->
-    <div>
-      <h1>Kultur</h1>
-    </div>
-    <picture>
-      <source srcset="./img/kultur/title@1.jpg" media="(max-width:767px)">
-      <img src="./img/kultur/title@2.jpg" alt="Kultur - Title">
-    </picture>
-
-    <div>
-      <!-- SUMMARY -->
+  <body>
+    <header>
       <div>
-        <h2>Intro to the World of UX</h2>
-        <p>The Intro to UX Design course introduced me to important UX terms, tools, and techniques. With so many new terms and concepts to learn, it seemed fitting that the course project would be a vocabulary learning project.</p>
-        <p>While researching how other experience learning new terms, I was able to pick up a few tricks while I tackled UX course vocabulary.</p>
+        <div class="container"></div>
+        <img src="./img/personal/logo/logo-scallop.svg" alt="Sophie Chen" class="logo"/>
+        <nav>
+          <ul class="navigation"></ul>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-    <div>
-      <ul>
-        <li>Role: Student UX/UI Designer</li>
-        <li>Time: October 2020 - November 2021</li>
-        <li>Tools:</li>
-        <li>Special Thanks: Todd Chapin (mentor), Jonathan Boehr (tutor)</li>
-      </ul>
-    </div>
+    </header>
 
-    <div>
-      <!-- CRITERIA -->
-      <div>
-        <h2>Design Criteria</h2>
-        <p>It can be hard to keep track of new jargon. People need a way to categorize, reference, and learn and master new vocabulary and concepts.</p>
-        <p>Design a mobile application focused on learning new vocabulary on the go. Design should include the following:</p>
-        <ul>
-          <li>A ​splash screen​, including a logo and tagline</li>
-          <li>An ​onboarding process​ or experience</li>
-          <li>A way to ​sign up and log in​ that allows users to input and save their information</li>
-          <li>An ​admin area​ where users can access their information</li>
-          <li>A ​menu​ that lets users navigate the application</li>
-          <li>A way to​ allow users to upload​ new vocabulary words with personal definitions</li>
-          <li>A way to review vocabulary</li>
-        </ul>
-      </div>
-    </div>
-
-    <div>
-      <!-- COMPETITORS -->
-      <div>
-        <h2>Competitive Research</h2>
-        <p>To give me a better idea of the market, I identified three existing vocabulary apps to evaluate. I downloaded each application to my phone, next I will highlight the pros and cons of each.</p>
-      </div>
-      <div>
-        <h4>Apps Reviewed</h4>
-        <ul>
-          <li>Quizlet</li>
-          <li>Brainscape</li>
-          <li>Chegg Prep</li>
-        </ul>
-      </div>
-    </div>
-
-    <div>
-      <!-- USER RESEARCH -->
-      <div>
-        <h2>User Research</h2>
-        <p>Once I had an idea of the market, it was time to get to know the end-user. I interviewed four individuals between 25-35 to learn more about their history with vocabulary learning apps.</p>
-      </div>
-
-      <div>
-        <h2>Interviews</h2>
-        <h4>Addison</h4>
-        <p>Part-Time Student, 25 y/o</p>
-        <h4>Billie</h4>
-        <p>English Teacher, 27 y/o</p>
-        <h4>Carter</h4>
-        <p>Self-Employed, 25 y/o</p>
-        <h4>Delta</h4>
-        <p>Strategy Associate Director, 34 y/o</p>
-      </div>
-    </div>
-
-    <div>
-      <!-- PERSONA -->
-      <div>
-        <h2>Our Persona</h2>
-        <p>I’d like you to meet Sloan, our user persona. She’s hardworking, adventurous, creative, and extremely witty. She loves her job at a tech startup, especially the collaborative environment. She is a self-proclaimed foodie who is always
-          down to try the newest restaurant in town. When she isn’t working or out with friends, she can be found knee-deep in planning her next adventure.</p>
-        <p>She finds that she learns best when there is variety and even better when she feels incentivized. She often is most motivated right before a trip or when a friend is also learning the same language.</p>
-      </div>
-      <picture>
-        <source srcset="./img/kultur/sloan@1.jpg" media="(max-width:767px)">
-        <img src="./img/kultur/sloan@2.jpg" alt="Persona - Sloan">
-      </picture>
-    </div>
-
-    <div>
-      <!-- NEEDS -->
-      <div>
-        <h2>User Needs</h2>
-        <p>Sloan needs a new way to learn that doesn’t feel generic. A place that is uniquely her own and will allow her to customize what and how she learns.</p>
-        <p>The majority of the apps on the market focus on making users proficient, not taking into consideration other motivations to learn a new language such as simply wanting to learn food vocabulary, slang, or enough to sing along to their
-          favorite Swedish song.</p>
-      </div>
-    </div>
-
-    <div>
-      <!-- USER FLOW TASK -->
-      <div>
-        <h2>User Flow & Task Analysis</h2>
-        <p>To understand how Sloan might navigate through Kultur, I created a user flow for three possible tasks.</p>
-        <ol>
-          <li>Adding own vocabulary</li>
-          <li>Collaborative learning</li>
-          <li>Setting friendly reminders </li>
-        </ol>
-        <p>Conducting a task analysis helped me narrow down which screen to design for first as I moved into bringing my ideas to life through sketch.</p>
-      </div>
-      <picture>
-        <source srcset="#" media="(max-width:767px)">
-        <img src="#" alt="Task Analysis - 1">
-        <source srcset="#" media="(max-width:767px)">
-        <img src="#" alt="Task Analysis - 2">
-        <source srcset="#" media="(max-width:767px)">
-        <img src="#" alt="Task Analysis - 3">
-      </picture>
-    </div>
-
-    <div>
-      <!-- WIREFRAME -->
-      <div>
-        <h2>Wireframing & Prototyping</h2>
-        <p>We now have a persona, a problem, and the primary tasks necessary to reach a potential solution. Next, it was time for wireframing and building a low-fidelity prototype for testing.</p>
-        <p>It took me some time to get started sketching. The task felt a little daunting and, I wasn't sure where or how to start. I remembered reading that screens should feel familiar, so I recreated standard login screens to help me get
-          drawing.</p>
-      </div>
-      <picture>
-        <source srcset="#" media="(max-width:767px)">
-        <img src="#" alt="Wireframe - Onboarding">
-        <source srcset="#" media="(max-width:767px)">
-        <img src="#" alt="Wireframe - Add a Word">
-        <source srcset="#" media="(max-width:767px)">
-        <img src="#" alt="Wireframe - Set a Reminder">
-      </picture>
-    </div>
-
-    <div>
-      <!-- TESTING -->
-      <div>
-        <h2>Usability Testing</h2>
-        <p>Next, we ran usability tests with our target users. The test consisted of four tasks: </p>
-        <ul>
-          <li>Sign-up/onboarding</li>
-          <li>Adding a new word</li>
-          <li>Playing a game with a friend</li>
-          <li>Setting a new reminder</li>
-        </ul>
-        <p>Having no previous experience with usability testing, I wasn't sure what to expect. I was most looking forward to getting feedback on my idea. In my head, it made sense. Now it was time to see if my design was as straightforward as I
-          thought it was.</p>
-      </div>
-    </div>
-
-    <div>
-      <!-- TESTING: RESULTS -->
-      <div>
-        <h2>Interviews</h2>
-        <h4>Edie</h4>
-        <p>Language & Culture Assistant, 28 y/o</p>
-        <h4>Frankie</h4>
-        <p>Self-Employed, 25 y/o</p>
-        <h4>Gemma</h4>
-        <p>IT & Theology Student, 20 y/o</p>
-        <h4>Holden</h4>
-        <p>Medical Student, 25 y/o</p>
-      </div>
-      <picture>
-        <source srcset="#" media="(max-width:767px)">
-        <img src="#" alt="Usability Test Results">
-      </picture>
-    </div>
-
-    <div>
-      <!-- UPDATES -->
-      <div>
-        <h2>Design Glitches & Revisions</h2>
+    <main>
+      <!-- HERO -->
+      <div id="hero">
+        <div class="container">
+          <h1>Kultur</h1>
+        </div>
         <picture>
-          <source srcset="#" media="(max-width:767px)">
-          <img src="#" alt="Glitch - 1">
-          <source srcset="#" media="(max-width:767px)">
-          <img src="#" alt="Glitch - 2">
-          <source srcset="#" media="(max-width:767px)">
-          <img src="#" alt="Glitch - 3">
+          <source srcset="./img/kultur/title@1.jpg" media="(max-width:767px)" />
+          <img src="./img/kultur/title@2.jpg" alt="Kultur - Title" />
         </picture>
-        <picture>
-          <source srcset="#" media="(max-width:767px)">
-          <img src="#" alt="Revision - Onboarding">
-          <source srcset="#" media="(max-width:767px)">
-          <img src="#" alt="Revision - Add a Word">
-          <source srcset="#" media="(max-width:767px)">
-          <img src="#" alt="Revision - Play a Game">
-          <source srcset="#" media="(max-width:767px)">
-          <img src="#" alt="Revision - Set a Reminder">
-        </picture>
-      </div>
-    </div>
 
-    <div>
-      <!-- NEXT STEPS -->
+        <div>
+          <!-- SUMMARY -->
+          <div>
+            <h2>Intro to the World of UX</h2>
+            <p>
+              The Intro to UX Design course introduced me to important UX terms,
+              tools, and techniques. With so many new terms and concepts to
+              learn, it seemed fitting that the course project would be a
+              vocabulary learning project.
+            </p>
+            <p>
+              While researching how other experience learning new terms, I was
+              able to pick up a few tricks while I tackled UX course vocabulary.
+            </p>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>Role: Student UX/UI Designer</li>
+            <li>Time: October 2020 - November 2021</li>
+            <li>Tools:</li>
+            <li>
+              Special Thanks: Todd Chapin (mentor), Jonathan Boehr (tutor)
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <!-- CRITERIA -->
+          <div>
+            <h2>Design Criteria</h2>
+            <p>
+              It can be hard to keep track of new jargon. People need a way to
+              categorize, reference, and learn and master new vocabulary and
+              concepts.
+            </p>
+            <p>
+              Design a mobile application focused on learning new vocabulary on
+              the go. Design should include the following:
+            </p>
+            <ul>
+              <li>A ​splash screen​, including a logo and tagline</li>
+              <li>An ​onboarding process​ or experience</li>
+              <li>
+                A way to ​sign up and log in​ that allows users to input and
+                save their information
+              </li>
+              <li>An ​admin area​ where users can access their information</li>
+              <li>A ​menu​ that lets users navigate the application</li>
+              <li>
+                A way to​ allow users to upload​ new vocabulary words with
+                personal definitions
+              </li>
+              <li>A way to review vocabulary</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <!-- COMPETITORS -->
+          <div>
+            <h2>Competitive Research</h2>
+            <p>
+              To give me a better idea of the market, I identified three
+              existing vocabulary apps to evaluate. I downloaded each
+              application to my phone, next I will highlight the pros and cons
+              of each.
+            </p>
+          </div>
+          <div>
+            <h4>Apps Reviewed</h4>
+            <ul>
+              <li>Quizlet</li>
+              <li>Brainscape</li>
+              <li>Chegg Prep</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <!-- USER RESEARCH -->
+          <div>
+            <h2>User Research</h2>
+            <p>
+              Once I had an idea of the market, it was time to get to know the
+              end-user. I interviewed four individuals between 25-35 to learn
+              more about their history with vocabulary learning apps.
+            </p>
+          </div>
+
+          <div>
+            <h2>Interviews</h2>
+            <h4>Addison</h4>
+            <p>Part-Time Student, 25 y/o</p>
+            <h4>Billie</h4>
+            <p>English Teacher, 27 y/o</p>
+            <h4>Carter</h4>
+            <p>Self-Employed, 25 y/o</p>
+            <h4>Delta</h4>
+            <p>Strategy Associate Director, 34 y/o</p>
+          </div>
+        </div>
+
+        <div>
+          <!-- PERSONA -->
+          <div>
+            <h2>Our Persona</h2>
+            <p>
+              I’d like you to meet Sloan, our user persona. She’s hardworking,
+              adventurous, creative, and extremely witty. She loves her job at a
+              tech startup, especially the collaborative environment. She is a
+              self-proclaimed foodie who is always down to try the newest
+              restaurant in town. When she isn’t working or out with friends,
+              she can be found knee-deep in planning her next adventure.
+            </p>
+            <p>
+              She finds that she learns best when there is variety and even
+              better when she feels incentivized. She often is most motivated
+              right before a trip or when a friend is also learning the same
+              language.
+            </p>
+          </div>
+          <picture>
+            <source
+              srcset="./img/kultur/sloan@1.jpg"
+              media="(max-width:767px)"
+            />
+            <img src="./img/kultur/sloan@2.jpg" alt="Persona - Sloan" />
+          </picture>
+        </div>
+
+        <div>
+          <!-- NEEDS -->
+          <div>
+            <h2>User Needs</h2>
+            <p>
+              Sloan needs a new way to learn that doesn’t feel generic. A place
+              that is uniquely her own and will allow her to customize what and
+              how she learns.
+            </p>
+            <p>
+              The majority of the apps on the market focus on making users
+              proficient, not taking into consideration other motivations to
+              learn a new language such as simply wanting to learn food
+              vocabulary, slang, or enough to sing along to their favorite
+              Swedish song.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <!-- USER FLOW TASK -->
+          <div>
+            <h2>User Flow & Task Analysis</h2>
+            <p>
+              To understand how Sloan might navigate through Kultur, I created a
+              user flow for three possible tasks.
+            </p>
+            <ol>
+              <li>Adding own vocabulary</li>
+              <li>Collaborative learning</li>
+              <li>Setting friendly reminders</li>
+            </ol>
+            <p>
+              Conducting a task analysis helped me narrow down which screen to
+              design for first as I moved into bringing my ideas to life through
+              sketch.
+            </p>
+          </div>
+          <picture>
+            <source srcset="#" media="(max-width:767px)" />
+            <img src="#" alt="Task Analysis - 1" />
+            <source srcset="#" media="(max-width:767px)" />
+            <img src="#" alt="Task Analysis - 2" />
+            <source srcset="#" media="(max-width:767px)" />
+            <img src="#" alt="Task Analysis - 3" />
+          </picture>
+        </div>
+
+        <div>
+          <!-- WIREFRAME -->
+          <div>
+            <h2>Wireframing & Prototyping</h2>
+            <p>
+              We now have a persona, a problem, and the primary tasks necessary
+              to reach a potential solution. Next, it was time for wireframing
+              and building a low-fidelity prototype for testing.
+            </p>
+            <p>
+              It took me some time to get started sketching. The task felt a
+              little daunting and, I wasn't sure where or how to start. I
+              remembered reading that screens should feel familiar, so I
+              recreated standard login screens to help me get drawing.
+            </p>
+          </div>
+          <picture>
+            <source srcset="#" media="(max-width:767px)" />
+            <img src="#" alt="Wireframe - Onboarding" />
+            <source srcset="#" media="(max-width:767px)" />
+            <img src="#" alt="Wireframe - Add a Word" />
+            <source srcset="#" media="(max-width:767px)" />
+            <img src="#" alt="Wireframe - Set a Reminder" />
+          </picture>
+        </div>
+
+        <div>
+          <!-- TESTING -->
+          <div>
+            <h2>Usability Testing</h2>
+            <p>
+              Next, we ran usability tests with our target users. The test
+              consisted of four tasks:
+            </p>
+            <ul>
+              <li>Sign-up/onboarding</li>
+              <li>Adding a new word</li>
+              <li>Playing a game with a friend</li>
+              <li>Setting a new reminder</li>
+            </ul>
+            <p>
+              Having no previous experience with usability testing, I wasn't
+              sure what to expect. I was most looking forward to getting
+              feedback on my idea. In my head, it made sense. Now it was time to
+              see if my design was as straightforward as I thought it was.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <!-- TESTING: RESULTS -->
+          <div>
+            <h2>Interviews</h2>
+            <h4>Edie</h4>
+            <p>Language & Culture Assistant, 28 y/o</p>
+            <h4>Frankie</h4>
+            <p>Self-Employed, 25 y/o</p>
+            <h4>Gemma</h4>
+            <p>IT & Theology Student, 20 y/o</p>
+            <h4>Holden</h4>
+            <p>Medical Student, 25 y/o</p>
+          </div>
+          <picture>
+            <source srcset="#" media="(max-width:767px)" />
+            <img src="#" alt="Usability Test Results" />
+          </picture>
+        </div>
+
+        <div>
+          <!-- UPDATES -->
+          <div>
+            <h2>Design Glitches & Revisions</h2>
+            <picture>
+              <source srcset="#" media="(max-width:767px)" />
+              <img src="#" alt="Glitch - 1" />
+              <source srcset="#" media="(max-width:767px)" />
+              <img src="#" alt="Glitch - 2" />
+              <source srcset="#" media="(max-width:767px)" />
+              <img src="#" alt="Glitch - 3" />
+            </picture>
+            <picture>
+              <source srcset="#" media="(max-width:767px)" />
+              <img src="#" alt="Revision - Onboarding" />
+              <source srcset="#" media="(max-width:767px)" />
+              <img src="#" alt="Revision - Add a Word" />
+              <source srcset="#" media="(max-width:767px)" />
+              <img src="#" alt="Revision - Play a Game" />
+              <source srcset="#" media="(max-width:767px)" />
+              <img src="#" alt="Revision - Set a Reminder" />
+            </picture>
+          </div>
+        </div>
+
+        <div>
+          <!-- NEXT STEPS -->
+          <div>
+            <h2>Next Steps</h2>
+            <p>
+              Emphasis the benefits of learning in a customizable and
+              collaborative spaces.
+            </p>
+            <p>
+              Encourage users to use the CHAT function to practice their written
+              and spoken skills while language learning.
+            </p>
+            <p>Add more GAMES users can play with their friends.</p>
+            <p>
+              Work on the TEST option during the ONBOARDING process for users.
+            </p>
+            <p>Create mid-fidelity and high-fidelity wireframes.</p>
+          </div>
+        </div>
+
+        <div>
+          <!-- TAKEAWAYS -->
+          <div>
+            <h2>Takeaways</h2>
+            <h4>Design is an ITERATIVE PROCESS</h4>
+            <p>
+              There are times when you feel like there is nothing stopping you
+              and other times where you feel completely lost in the design
+              process.
+            </p>
+            <h4>Design is a COLLABORATIVE PROCESS</h4>
+            <p>
+              Everyone navigates the world differently, reach out to a friend or
+              family member, they may have a fresh approach to a task.
+            </p>
+            <h4>When in doubt, TAKE A BREAK</h4>
+            <p>
+              When you’re feeling stuck you may want to keep pushing until you
+              figure it out, but instead, take a break, get some air, and come
+              back to your design with fresh eyes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
       <div>
-        <h2>Next Steps</h2>
-        <p>Emphasis the benefits of learning in a customizable and collaborative spaces.</p>
-        <p>Encourage users to use the CHAT function to practice their written and spoken skills while language learning.</p>
-        <p>Add more GAMES users can play with their friends.</p>
-        <p>Work on the TEST option during the ONBOARDING process for users.</p>
-        <p>Create mid-fidelity and high-fidelity wireframes.</p>
+        <!-- FOOTER -->
+        <div>
+          <h2>Let's Chat!</h2>
+          <p>
+            If you would like to learn more about my work or want to chat over a
+            cup of virtual coffee, feel free to reach out. I'm never one to turn
+            down meeting a new person or drinking a big cup of iced coffee.
+          </p>
+          <p>
+            Give me a call at
+            <a href="tel:7062016214">706-201-6214</a>
+          </p>
+          <p>Prefer to shoot me an email?</p>
+          <a href="mailto:sophie.chen13@gmail.com">Email Me</a>
+        </div>
+
+        <div>
+          <!-- SOCIAL -->
+          <p>Let's Connect!</p>
+          <a
+            href="https://www.linkedin.com/in/sophiechen13/"
+            target="_blank"
+            class="social"
+          >
+            <img src="./img/social/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.behance.net/sophiechen13"
+            target="_blank"
+            class="social"
+          >
+            <img src="./img/social/behance.png" alt="Behance" />
+          </a>
+        </div>
+
+        <div>
+          <!-- COPYRIGHT -->
+          <p>Copyright Sophie Chen 2021</p>
+        </div>
       </div>
-    </div>
-
-    <div>
-      <!-- TAKEAWAYS -->
-      <div>
-        <h2>Takeaways</h2>
-        <h4>Design is an ITERATIVE PROCESS</h4>
-        <p>There are times when you feel like there is nothing stopping you and other times where you feel completely lost in the design process.</p>
-        <h4>Design is a COLLABORATIVE PROCESS</h4>
-        <p>Everyone navigates the world differently, reach out to a friend or family member, they may have a fresh approach to a task.</p>
-        <h4>When in doubt, TAKE A BREAK</h4>
-        <p>When you’re feeling stuck you may want to keep pushing until you figure it out, but instead, take a break, get some air, and come back to your design with fresh eyes.</p>
-      </div>
-    </div>
-
-  </main>
-
-  <footer>
-    <div>
-      <!-- FOOTER -->
-      <div>
-        <h2>Let's Chat!</h2>
-        <p>If you would like to learn more about my work or want to chat over a cup of virtual coffee, feel free to reach out. I'm never one to turn down meeting a new person or drinking a big cup of iced coffee.</p>
-        <p>Give me a call at
-          <a href="tel:7062016214">706-201-6214</a>
-        </p>
-        <p>Prefer to shoot me an email?</p>
-        <a href="mailto:sophie.chen13@gmail.com">Email Me</a>
-      </div>
-
-      <div>
-        <!-- SOCIAL -->
-        <p>Let's Connect!</p>
-        <a href="https://www.linkedin.com/in/sophiechen13/" target="_blank" class="social">
-          <img src="./img/social/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://www.behance.net/sophiechen13" target="_blank" class="social">
-          <img src="./img/social/behance.png" alt="Behance">
-        </a>
-      </div>
-
-      <div>
-        <!-- COPYRIGHT -->
-        <p>Copyright Sophie Chen 2021</p>
-      </div>
-    </div>
-  </footer>
-
-</body>
-
+    </footer>
+  </body>
 </html>

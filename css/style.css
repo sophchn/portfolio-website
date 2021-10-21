@@ -324,16 +324,6 @@ input[type=submit] {
 }
 
 /* case studies */
-
-.column-intro {
-  float: left;
-  width: 50%;
-  padding-left: 25px;
-  padding-right: 25px;
-  text-align: left;
-  height: 300px;
-}
-
 #reflection {
   text-align: center;
 }

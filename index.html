@@ -13,14 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
 
@@ -45,12 +45,12 @@
       <div>
         <div class="container"></div>
         <img
-          src="./img/personal/logo/logo-scallop.svg"
+          src="./img/personal/logo/logo-transparent.png"
           alt="Sophie Chen"
           class="logo"
         />
         <nav>
-          <ul class="navigation"></ul>
+          <ul class="social"></ul>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -61,26 +61,27 @@
       </div>
     </header>
 
-    <main>
-      <!-- HERO -->
-      <div id="hero">
-        <div class="container">
-          <h1>Hi, I'm Sophie Chen. I'm an Atlanta based UX Designer.</h1>
-          <p>
-            I have a background in marketing and communications and a passion
-            for retail. I'm also a mental health advocate!
-          </p>
-        </div>
+    <!-- HERO -->
+    <div id="hero">
+      <div class="column" style="background-color: #ffe3e0">
+        <img src="./img/personal/profile-logo.png" alt="Sophie Chen" />
+      </div>
+      <div class="column" style="background-color: #ffe3e0">
+        <h1>Hi, I'm Sophie Chen,</h1>
+        <h2>a UX/UI Designer based in Atlanta.</h2>
+        <p>
+          I have a background in marketing and communications and a passion for
+          retail. I'm also a mental health advocate!
+        </p>
+      </div>
+    </div>
 
-        <div id="work">
-          <!-- WORK -->
-          <div class="container">
-            <h2>Featured Work</h2>
-            <div class="row">
-              
-              <div>
+    <main>
+      <div id="main">
+        <!-- WORK -->
+            <div class="container">
+              <div class="column" style="background-color: #fbf8f5">
                 <!-- OLIVE -->
-                <div class="row"></div>
                 <h3>Olive</h3>
                 <picture>
                   <source
@@ -90,25 +91,19 @@
                   <img src="./img/olive/olive-home@2.png" alt="Olive" />
                 </picture>
                 <p>
-                  Olive provides health-conscious individuals one platform to
-                  track and manage their health and wellbeing.
+                  Olive provides health-conscious individuals one platform to track
+                  and manage their health and wellbeing.
                 </p>
                 <a href="olive.html" class="button">Read More</a>
-              </div>
-
-              <div>
+    
                 <!-- HERITAGE -->
-                <div class="row"></div>
                 <h3>Heritage</h3>
                 <picture>
                   <source
                     srcset="./img/heritage/heritage-home@1.png"
                     media=" (max-width:767px) "
                   />
-                  <img
-                    src="./img/heritage/heritage-home@2.png"
-                    alt="Heritage"
-                  />
+                  <img src="./img/heritage/heritage-home@2.png" alt="Heritage" />
                 </picture>
                 <p>
                   Heritage presents first-time buyers access to reliable,
@@ -117,10 +112,9 @@
                 </p>
                 <a href="heritage.html" class="button">Read More</a>
               </div>
-
-              <div>
+    
+              <div class="column" style="background-color: #fbf8f5">
                 <!-- KULTUR -->
-                <div class="row"></div>
                 <h3>Kultur</h3>
                 <picture>
                   <source
@@ -130,63 +124,49 @@
                   <img src="./img/kultur/kultur-home@2.png" alt="Kultur" />
                 </picture>
                 <p>
-                  Kultur lets users customize how they want to learn and even
-                  create flashcards (perfect for when you pick up local slang).
+                  Kultur lets users customize how they want to learn and even create
+                  flashcards (perfect for when you pick up local slang).
                 </p>
                 <a href="kultur.html" class="button">Read More</a>
-              </div>
-
-              <div>
+    
                 <!-- SPACE JAM -->
-                <div class="row"></div>
                 <h3>Space Jam</h3>
                 <picture>
                   <source
                     srcset="./img/spacejam/spacejam-home@1.png"
                     media="(max-width:767px)"
                   />
-                  <img
-                    src="./img/spacejam/spacejam-home@2.png"
-                    alt="Space Jam"
-                  />
+                  <img src="./img/spacejam/spacejam-home@2.png" alt="Space Jam" />
                 </picture>
                 <p>
-                  Space Jam is for the curious middle schooler looking for help
-                  with a class project or just interested in learning more about
-                  a NASA JPL mission.
+                  Space Jam is for the curious middle schooler looking for help with
+                  a class project or just interested in learning more about a NASA
+                  JPL mission.
                 </p>
                 <a href="spacejam.html" class="button">Read More</a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </main>
 
     <footer>
-      <div id="footer"></div>
-      <div class="container">
+      <div id="footer">
         <!-- FOOTER -->
         <div>
-          <h2>Let's Chat!</h2>
+          <h2>Let's Connect!</h2>
           <p>
             If you would like to learn more about my work or want to chat over a
-            cup of virtual coffee, feel free to reach out. I'm never one to turn
-            down meeting a new person or drinking a big cup of iced coffee.
+            cup of virtual coffee, feel free to reach out.
           </p>
           <p>
-            Give me a call at
-            <a href="tel:7062016214">706-201-6214</a>
+            I'm never one to turn down meeting a new person or drinking a big
+            cup of iced coffee.
           </p>
-          <p>Prefer to shoot me an email?</p>
-          <a href="mailto:sophie.chen13@gmail.com" class="button contact"
-            >Email Me</a
-          >
+          <a href="contact.html" class="button contact">Send A Note</a>
         </div>
 
         <div>
           <!-- SOCIAL -->
-          <p>Let's Connect!</p>
           <a
             href="https://www.linkedin.com/in/sophiechen13/"
             target="_blank"
@@ -201,7 +181,24 @@
           >
             <img src="./img/social/behance.png" alt="Behance" />
           </a>
+          <a
+            href="mailto:sophie.chen13@gmail.com"
+            target="_blank"
+            class="social"
+          >
+            <img src="./img/social/email.png" alt="Email" />
+          </a>
         </div>
+
+        <nav>
+          <ul class="social"></ul>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
 
         <div>
           <!-- COPYRIGHT -->

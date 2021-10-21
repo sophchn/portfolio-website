@@ -1,64 +1,140 @@
 /*
-Colors:
-Powder White: #fbf8f5;
-Pink Lemonade: #ffe3e0;
-Taupe: #e5d3c9;
-Peacock: #003b49;
-Orange Sherbert: #fba374;
-Blood Orange: #ff5736;
-Sky Blue: #b8e0f9;
+colors:
+powder white: #fbf8f5;
+pink lemonade: #ffe3e0;
+taupe: #e5d3c9;
+peacock: #003b49;
+orange sherbert: #fba374;
+blood orange: #ff5736;
+sky blue: #b8e0f9;
 */
-body {
-  background-color: #FBF8F5
+
+* {
+  box-sizing: border-box;
 }
 
-/* typography */
+html {
+  scroll-behavior: smooth;
+}
+
+/* body */
 body {
-  font-family: 'Poppins', sans-serif;
+  background-color: #fbf8f5;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
   color: #4a4a4a;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Josefin Slab', serif;
+main {
+  width: 100%;
+  margin: auto;
+  padding: 25px;
+  height: fit-content;
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Josefin Slab", serif;
   line-height: 1.6;
   color: #222222;
 }
 
 h1 {
   font-size: 2.75em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 2.0em;
-  font-weight: 700;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h4 {
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
-/* imagery */
+/* images */
 img {
   width: 100%;
 }
 
 .social > img {
   width: 44px;
-  height:44px;
-
+  height: 44px;
 }
 
-/* links & buttons */
+/* header */
+header {
+  position: relative;
+  width: 100%;
+  background-color: #ffe3e0;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 5px dotted #ff5736;
+}
+
+/* nav */
+.logo {
+  max-width: 150px;
+  margin-top: 25px;
+  float: center;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  font-family: "Josefin Slab", serif;
+}
+
+nav > ul {
+  list-style-type: none;
+  margin-top: 15px;
+  float: center;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ff5736;
+}
+
+nav > ul > li > a:active {
+  color: #003b49;
+  text-decoration: none;
+}
+
+nav > ul > li > a:visited {
+  color: #ff5736;
+  text-decoration: underline;
+}
+
+nav > ul > li > a:hover {
+  color: #003b49;
+  text-decoration: underline;
+}
+
+body {
+  background-color: #fbf8f5;
+}
+
+/* links */
 a {
   color: #ff5736;
   text-decoration: none;
@@ -74,17 +150,16 @@ a:visited {
 }
 
 a:active {
-  /* selected link */
   color: #003b49;
 }
-
+/* buttons */
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ffe3e0;
-  color: #fbf8f5;
+  color: #fba374;;
   font-weight: 400;
   padding: 10px;
+  margin-bottom: 50px;
   border-radius: 3px;
   border-bottom: 2px solid #ff5736;
   transition: 0.2s opacity;
@@ -104,7 +179,11 @@ a:active {
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px;
   border: 2px solid #ff7f50;
+  border-radius: 3px;
+  margin-bottom: 15px;
 }
 
 .button.contact:hover {
@@ -117,10 +196,170 @@ a:active {
   text-decoration: none;
 }
 
-
-/* header */
 /* footer */
+#footer {
+  background-color: #ffe3e0;
+  text-align: center;
+  padding: 25px;
+}
+
+.social {
+  float: center;
+}
+
+/* index */
+#hero {
+  background-color: #ffe3e0;
+  height: 650px;
+}
+
+#hero h1 {
+  text-align: center;
+  padding-top: 150px;
+  padding-right: 100px;
+}
+
+#hero h2 {
+  text-align: center;
+  padding-right: 100px;
+}
+#hero p {
+  text-align: center;
+  padding-right: 100px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
 /* main */
-/* general */
+#work {
+  padding-top: 75px;
+}
+
+#work h1 {
+  text-align: center;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
 /* about */
+#about {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#bio {
+  padding-top: 50px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+#skills h2 {
+  text-align: center;
+  padding-top: 75px;
+}
+
+.column-skills {
+  float: left;
+  width: 50%;
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: left;
+  height: 450px;
+}
+
+#cv {
+  display: block;
+  padding: 20px;
+}
+
+/* work */
+#uxui {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#branding {
+  margin-top: 50px;
+  text-align: center;
+}
+
 /* contact */
+#hi {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#form {
+  width:fit-content;
+  padding: 25px 300px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #e5d3c9;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: transparent;
+  color: #ff5736;
+  padding: 12px 20px;
+  border: 1px solid #e5d3c9;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* case studies */
+
+.column-intro {
+  float: left;
+  width: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: left;
+  height: 300px;
+}
+
+#reflection {
+  text-align: center;
+}
+
+.row {
+  float: left;
+  width: 33.33%;
+  height: 300px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  background-color: #fbf8f5;
+}
+
+.row-two {
+  float: left;
+  width: 33.33%;
+  height: 500px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  background-color: #fbf8f5;
+}
+/* olive */
+
+/* freelance */
+#soon {
+  text-align: center;
+}

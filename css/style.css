@@ -80,7 +80,6 @@ header {
   width: 100%;
   background-color: #ffe3e0;
   text-align: center;
-  padding: 10px 0;
   border-bottom: 5px dotted #ff5736;
 }
 
@@ -88,7 +87,6 @@ header {
 .logo {
   max-width: 150px;
   margin-top: 25px;
-  float: center;
 }
 
 nav {
@@ -210,28 +208,23 @@ a:active {
 /* index */
 #hero {
   background-color: #ffe3e0;
-  height: 650px;
+  height: fit-content;
+}
+
+#hero span {
+  display: block;
 }
 
 #hero h1 {
   text-align: center;
   padding-top: 150px;
-  padding-right: 100px;
 }
 
 #hero h2 {
   text-align: center;
-  padding-right: 100px;
 }
 #hero p {
   text-align: center;
-  padding-right: 100px;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
 }
 
 /* main */
@@ -240,12 +233,6 @@ a:active {
 }
 
 #work h1 {
-  text-align: center;
-}
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
   text-align: center;
 }
 
@@ -265,15 +252,6 @@ a:active {
 #skills h2 {
   text-align: center;
   padding-top: 75px;
-}
-
-.column-skills {
-  float: left;
-  width: 50%;
-  padding-left: 150px;
-  padding-right: 150px;
-  text-align: left;
-  height: 450px;
 }
 
 #cv {
@@ -300,7 +278,6 @@ a:active {
 
 #form {
   width:fit-content;
-  padding: 25px 300px;
 }
 
 input[type=text], select, textarea {
@@ -328,28 +305,34 @@ input[type=submit] {
   text-align: center;
 }
 
-.row {
-  float: left;
-  width: 33.33%;
-  height: 300px;
-  padding-left: 25px;
-  padding-right: 25px;
-  text-align: center;
-  background-color: #fbf8f5;
-}
-
-.row-two {
-  float: left;
-  width: 33.33%;
-  height: 500px;
-  padding-left: 25px;
-  padding-right: 25px;
-  text-align: center;
-  background-color: #fbf8f5;
-}
 /* olive */
 
 /* freelance */
 #soon {
   text-align: center;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }

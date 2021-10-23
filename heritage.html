@@ -42,17 +42,17 @@
 
   <body>
     <header>
-      <div>
-        <div class="container"></div>
-        <img
-          src="./img/personal/logo/logo-transparent.png"
-          alt="Sophie Chen"
-          class="logo"
-        />
+      <div class="container">
+        <a href="index.html">
+          <img
+            src="./img/personal/logo/logo-transparent.png"
+            alt="Sophie Chen"
+            class="logo"
+          />
+        </a>
         <nav>
           <ul class="social"></ul>
           <ul>
-            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="work.html">Work</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -63,17 +63,26 @@
 
     <main>
       <!-- CASE STUDY -->
-      <picture>
-        <source srcset="./img/heritage/title@1.png" media="(max-width:767px)" />
-        <img src="./img/heritage/title@2.png" alt="Heritage - Title" />
-      </picture>
+      <div class="row">
+        <div class="column col-md-8 col-lg-8">
+          <picture>
+            <source
+              srcset="./img/heritage/title@1.png"
+              media="(max-width:767px)"
+            />
+            <img src="./img/heritage/title@2.png" alt="Heritage - Title" />
+          </picture>
+        </div>
 
-      <ul>
-        <li>Role: Student UX/UI Designer</li>
-        <li>Time: May 2021 - September 2021</li>
-        <li>Tools: Balsamiq, Canva, Figma</li>
-        <li>Special Thanks: Erin Huang (tutor)</li>
-      </ul>
+        <div class="column col-md-4 col-lg-4">
+          <ul>
+            <li>Role: Student UX/UI Designer</li>
+            <li>Time: May 2021 - September 2021</li>
+            <li>Tools: Balsamiq, Canva, Figma</li>
+            <li>Special Thanks: Erin Huang (tutor)</li>
+          </ul>
+        </div>
+      </div>
 
       <!-- WHY -->
       <div>
@@ -203,54 +212,43 @@
           <!-- USER FLOW -->
           <picture>
             <div class="row">
-              <source
-                srcset="./img/heritage/uf-account@1.jpg"
-                media="(max-width:767px)"
-              />
-              <img
-                src="./img/heritage/uf-account@2.jpg"
-                alt="Heritage - Title"
-              />
-            </div>
-            <div class="row">
-              <source
-                srcset="./img/heritage/uf-properties@1.jpg"
-                media="(max-width:767px)"
-              />
-              <img
-                src="./img/heritage/uf-properties@2.jpg"
-                alt="Heritage - Title"
-              />
-            </div>
-            <div class="row">
-              <source
-                srcset="./img/heritage/uf-contact@1.jpg"
-                media="(max-width:767px)"
-              />
-              <img
-                src="./img/heritage/uf-contact@2.jpg"
-                alt="Heritage - Title"
-              />
+              <div class="column col-md-4 col-lg-4">
+                <source
+                  srcset="./img/heritage/uf-account@1.jpg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/heritage/uf-account@2.jpg"
+                  alt="Heritage - Title"
+                />
+              </div>
+
+              <div class="column col-md-4 col-lg-4">
+                <source
+                  srcset="./img/heritage/uf-properties@1.jpg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/heritage/uf-properties@2.jpg"
+                  alt="Heritage - Title"
+                />
+              </div>
+
+              <div class="column col-md-4 col-lg-4">
+                <source
+                  srcset="./img/heritage/uf-contact@1.jpg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/heritage/uf-contact@2.jpg"
+                  alt="Heritage - Title"
+                />
+              </div>
             </div>
           </picture>
         </div>
 
-        <div>
-          <!-- WIREFRAME -->
-          <picture>
-            <source srcset="#" media="(max-width:767px)" />
-            <img src="#" alt="Wireframe - Original" />
-          </picture>
-        </div>
-
-        <div>
-          <!-- WIREFRAME UPDATES -->
-          <picture>
-            <source srcset="#" media="(max-width:767px)" />
-            <img src="#" alt="Wireframe - Updates" />
-          </picture>
-        </div>
-
+        <!-- DESIGN DECISIONS  -->
         <div>
           <picture>
             <source
@@ -404,28 +402,36 @@
       <div id="reflection">
         <!-- REFLECTION -->
         <h2>Reflection</h2>
-          <h3>It's Okay to Take a Break</h3>
-          <p>
-            You know when you look at a word for too long and you're not sure
-            it's even a word? Well, that's how I felt multiple times throughout
-            this project. I'm learning to permit myself to take a break without
-            feeling like I'm falling behind.
-          </p>
-          <h3>Ask Questions</h3>
-          <p>
-            Unlike my first UX project, I didn't go through as many stages of
-            research. At times I felt a bit lost and unsure of my design
-            direction. In these times, I reminded myself to check in with others
-            and ask for help thinking through the process.
-          </p>
-          <h3>Inspiration is Everywhere</h3>
-          <p>
-            A vast majority of people have some experience buying or selling a
-            home or know someone who has. You never know when someone you see
-            daily could offer insights into a design decision that feels
-            difficult to solve.
-          </p>
+        <div class="row">
+          <div class="column col-md-4 col-lg-4">
+            <h3>It's Okay to Take a Break</h3>
+            <p>
+              You know when you look at a word for too long and you're not sure
+              it's even a word? Well, that's how I felt multiple times
+              throughout this project. I'm learning to permit myself to take a
+              break without feeling like I'm falling behind.
+            </p>
+          </div>
+          <div class="column col-md-4 col-lg-4">
+            <h3>Ask Questions</h3>
+            <p>
+              Unlike my first UX project, I didn't go through as many stages of
+              research. At times I felt a bit lost and unsure of my design
+              direction. In these times, I reminded myself to check in with
+              others and ask for help thinking through the process.
+            </p>
+          </div>
+          <div class="column col-md-4 col-lg-4">
+            <h3>Inspiration is Everywhere</h3>
+            <p>
+              A vast majority of people have some experience buying or selling a
+              home or know someone who has. You never know when someone you see
+              daily could offer insights into a design decision that feels
+              difficult to solve.
+            </p>
+          </div>
         </div>
+      </div>
     </main>
 
     <footer>
@@ -441,48 +447,49 @@
             I'm never one to turn down meeting a new person or drinking a big
             cup of iced coffee.
           </p>
+
           <a href="contact.html" class="button contact">Send A Note</a>
         </div>
 
         <div>
           <!-- SOCIAL -->
-          <h3>Let's Connect!</h3>
-          <a
-            href="https://www.linkedin.com/in/sophiechen13/"
-            target="_blank"
-            class="social"
-          >
-            <img src="./img/social/linkedin.png" alt="LinkedIn" />
-          </a>
-          <a
-            href="https://www.behance.net/sophiechen13"
-            target="_blank"
-            class="social"
-          >
-            <img src="./img/social/behance.png" alt="Behance" />
-          </a>
-          <a
-            href="mailto:sophie.chen13@gmail.com"
-            target="_blank"
-            class="social"
-          >
-            <img src="./img/social/email.png" alt="Email" />
-          </a>
-        </div>
+          <div>
+            <h3>Let's Connect!</h3>
+            <a
+              href="https://www.linkedin.com/in/sophiechen13/"
+              target="_blank"
+              class="social"
+            >
+              <img src="./img/social/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://www.behance.net/sophiechen13"
+              target="_blank"
+              class="social"
+            >
+              <img src="./img/social/behance.png" alt="Behance" />
+            </a>
+            <a
+              href="mailto:sophie.chen13@gmail.com"
+              target="_blank"
+              class="social"
+            >
+              <img src="./img/social/email.png" alt="Email" />
+            </a>
+          </div>
 
-        <nav>
-          <ul class="social"></ul>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+          <a href="index.html">
+            <img
+              src="./img/personal/logo/logo-transparent.png"
+              alt="Sophie Chen"
+              class="logo"
+            />
+          </a>
 
-        <div>
-          <!-- COPYRIGHT -->
-          <p>Copyright Sophie Chen 2021</p>
+          <div>
+            <!-- COPYRIGHT -->
+            <p>Copyright Sophie Chen 2021</p>
+          </div>
         </div>
       </div>
     </footer>

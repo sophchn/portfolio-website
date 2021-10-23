@@ -163,6 +163,7 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #ff5736;
   transition: 0.2s opacity;
+  margin-bottom: 25px;
 }
 
 .button:hover {
@@ -254,8 +255,7 @@ a:active {
 
 #bio {
   padding-top: 50px;
-  text-align: center;
-  width: 90%;
+  text-align: left;
   margin: auto;
 }
 

@@ -87,6 +87,7 @@ header {
 /* nav */
 .logo {
   max-width: 150px;
+  padding-top: 10px;
 }
 
 nav {

@@ -42,22 +42,40 @@
 
   <body>
     <header>
+      <script
+        src="https://kit.fontawesome.com/40d9ba7c5e.js"
+        crossorigin="anonymous"
+      ></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <div class="container">
-        <a href="index.html">
-          <img
-            src="./img/personal/logo/logo-transparent.png"
-            alt="Sophie Chen"
-            class="logo"
-          />
-        </a>
-        <nav>
-          <ul class="social"></ul>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img
+              src="./img/personal/logo/logo-transparent.png"
+              alt="Sophie Chen"
+              class="logo"
+            />
+          </a>
+          <nav>
+            <ul class="social"></ul>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a href="./files/sophie-chen-cv.pdf" target="_blank">CV</a>
+              </li>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -79,7 +97,7 @@
           <img
             src="./img/personal/profile-pic@2.jpeg"
             alt="Sophie Chen"
-            class="headshot"
+            class="profile"
           />
         </picture>
         <div class="row">
@@ -136,12 +154,9 @@
             </div>
             <div id="cv">
               <!-- CV -->
-              <a href="./files/sophie-chen-cv.pdf" target="_blank">CV</a>
-              <div>
-                <a href="./files/sophie-chen-cv-text.pdf" target="_blank"
-                  >Text Based CV</a
-                >
-              </div>
+              <h2>CV</h2>
+              <a href="./files/sophie-chen-cv.pdf" target="_blank" class="button">Download CV</a>
+                <a href="./files/sophie-chen-cv-text.pdf" target="_blank" class="button">CV - Text Only</a>
             </div>
           </div>
 
@@ -233,7 +248,12 @@
         </div>
       </div>
     </footer>
-    
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

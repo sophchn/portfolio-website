@@ -65,6 +65,42 @@ h4 {
   font-weight: 500;
 }
 
+/* edit */
+span {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.25em;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* edit */
+blockquote {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  border: 1px solid #cb9500;
+  margin: auto;
+  padding: 50px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.centered {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
 /* images */
 img {
   width: 100%;
@@ -77,31 +113,32 @@ img {
 
 /* header */
 header {
-  position: relative;
-  width: 100%;
   background-color: #ffe3e0;
+  padding: 12px 0 0;
+  margin: 0 auto;
+  display: inline-block;
+  width: 100%;
   border-bottom: 5px dotted #ff5736;
-  text-align: center;
+  z-index: 10;
 }
 
 /* nav */
 .logo {
-  max-width: 150px;
-  padding-top: 10px;
+  max-width: 75px;
+  margin: 10px;
 }
 
 nav {
   display: inline-block;
   width: 100%;
-  height: fit-content;
   background-color: #ffe3e0;
   font-family: "Josefin Slab", serif;
 }
 
 nav > ul {
   list-style-type: none;
-  margin-top: 15px;
-  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 nav > ul > li {
@@ -128,6 +165,34 @@ nav > ul > li > a:visited {
 nav > ul > li > a:hover {
   color: #003b49;
   text-decoration: underline;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 body {
@@ -262,7 +327,6 @@ a:active {
 
 #cv {
   display: block;
-  padding: 20px;
 }
 
 /* work */
@@ -330,10 +394,33 @@ medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
+  .logo {
+    max-width: 125px;
+    margin: 10px;
+  }
+
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 25px;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    position: relative;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .col-md-8 {

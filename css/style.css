@@ -190,7 +190,8 @@ nav>ul>li>a:hover {
 
 .navtoggle li .icon {
     position: absolute;
-    top: 30px;
+    right: 0;
+    top: 2px;
     font-size: 20px;
 }
 
@@ -200,6 +201,7 @@ nav>ul>li>a:hover {
 
 .navtoggle.responsive li {
     display: block;
+    text-align: right;
     padding: 10px 0;
 }
 
@@ -345,7 +347,7 @@ a:active {
     margin: auto;
 }
 
-#cv {
+#resume {
     display: block;
 }
 

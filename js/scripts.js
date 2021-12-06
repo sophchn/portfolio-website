@@ -1,5 +1,5 @@
- /*jslint devel: true */
- /*jslint browser */
+/*jslint devel: true */
+/*jslint browser */
 
 console.log("Welcome to My Portfolio Site!");
 
